@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+/* Header Section */
+.header {
+    background-color: #777;
+    color: white;
+    padding: 20px;
+}
+
+.header h2 {
+    margin-bottom: 15px;
+}
+
+.client-type-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.client-button {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.client-button.active {
+    background-color: #f0f0f0;
+    border: 2px solid #000;
+}
+
+.client-button.active:hover{
+    background-color: #ccc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Search Section */
+.search-section {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+#search-client {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 10px 15px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.client-list {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.client-item {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.client-item:hover {
+    background-color: #e5e5e5;
+}
+
+.client-item:last-child {
+    border-bottom: none;
+}
+
+.client-item.selected {
+    background-color: #c8e6c9;
+}
+
+.client-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.client-name {
+    font-weight: bold;
+}
+
+.client-name i, .client-address i {
+    margin-right: 10px;
+    color: #333;
+}
+
+.client-address i {
+    color: #e74c3c;
+}
+
+.select-client-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.select-client-button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Create Order Section */
+.create-order-section {
+    padding: 20px;
+}
+
+.create-order-button {
+    padding: 10px 20px;
+    background-color: #0a5c0a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+.create-order-button:hover{
+    transition: 0.5s;
+    background-color: #051b05;
+    box-shadow: #000000;
+}
+
+/* Order Form */
+.order-form {
+    background-color: #e0e0e0;
+    padding: 20px;
+    display: none;
+}
+
+.date-section {
+    display: block;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.date-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.date-field label {
+    font-weight: bold;
+}
+
+.date-field input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 250px;
+}
+
+/* Product Section */
+.product-section {
+    margin-bottom: 20px;
+}
+
+.product-header {
+    display: flex;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.product-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.product-column {
+    flex: 1;
+    padding: 0 5px;
+}
+
+.product-column input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+/* Observations Section */
+.observations-section {
+    margin-bottom: 20px;
+}
+
+.observations-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.observations-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+/* Submit Section */
+.submit-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.submit-button {
+    padding: 15px 30px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Loading indicator */
+.loading {
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    color: #777;
+}
+
+/* No results message */
+.no-results {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .date-section {
+        flex-direction: row;
+        gap: 30px;
+    }
+}
+
+#order-date:hover{
+    transition: 0.5s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+#delivery-date:hover{
+    transition: 0.5s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+#inputproducto:hover{
+    transition: 0.5s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+#inputnombre:hover{
+    transition: 0.5s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+#inputUnidad:hover{
+    transition: 0.5s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+#inputEmbalaje:hover{
+    transition: 0.5s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+#inputCantidadUnidades:hover{
+    transition: 0.5s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+#observations:hover{
+    transition: 0.5s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+#submit-order-btn:hover{
+    transition: 0.5s;
+    background-color: red;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}

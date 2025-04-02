@@ -1,0 +1,98 @@
+/* Estilos específicos para la página de nuevo cliente */
+
+.new-client-section {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.client-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.form-group label i {
+    width: 20px;
+    text-align: center;
+}
+
+.form-group input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.create-order-button, .register-client-button {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+}
+
+.create-order-button {
+    background-color: #0a5c0a;
+}
+
+.register-client-button {
+    background-color: #0a5c0a;
+}
+
+.register-client-button:hover{
+    transition: 0.5s;
+    background-color: #051b05;
+    box-shadow: #000000;
+}
+
+/* Inicialmente ocultar el formulario de pedido */
+.order-form {
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .action-buttons {
+        flex-direction: column;
+    }
+}
+
+#client-name:hover{
+    transition: 0.5s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+#client-phone:hover{
+    transition: 0.5s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+#client-email:hover{
+    transition: 0.5s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+#client-address:hover{
+    transition: 0.5s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}

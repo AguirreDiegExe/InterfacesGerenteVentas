@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Nuevo Pedido - Nuevo Cliente</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nuevoClienteStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Crear Nuevo Pedido</h2>
+            <div class="client-type-buttons">
+                <a href="index.html">
+                    <button class="client-button" id="existing-client-btn">Cliente Existente</button>
+                </a>
+                <button class="client-button active" id="new-client-btn">Nuevo Cliente</button>
+            </div>
+        </div>
+
+        <div class="new-client-section">
+            <div class="client-form">
+                <div class="form-group">
+                    <label for="client-name"><i class="fas fa-user"></i> Ingresar Nombre y Apellido</label>
+                    <input type="text" id="client-name" placeholder="Ingresar Nombre y Apellido">
+                </div>
+                
+                <div class="form-group">
+                    <label for="client-phone"><i class="fas fa-phone"></i> Ingresar Teléfono</label>
+                    <input type="tel" id="client-phone" placeholder="Ingresar Teléfono">
+                </div>
+                
+                <div class="form-group">
+                    <label for="client-email"><i class="fas fa-envelope"></i> Ingresar Correo electrónico</label>
+                    <input type="email" id="client-email" placeholder="Ingresar Correo electrónico">
+                </div>
+                
+                <div class="form-group">
+                    <label for="client-address"><i class="fas fa-home"></i> Ingresar Dirección</label>
+                    <input type="text" id="client-address" placeholder="Ingresar Dirección">
+                </div>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <button class="create-order-button" id="create-order-btn">Crear Nota de pedido</button>
+            <button class="register-client-button" id="register-client-btn">Registrar nuevo cliente</button>
+        </div>
+
+        <div class="order-form" id="order-form">
+            <div class="date-section">
+                <div class="date-field">
+                    <label for="order-date">Fecha de Pedido</label>
+                    <input type="text" id="order-date" placeholder="dd/mm/yyyy">
+                </div>
+                <div class="date-field">
+                    <label for="delivery-date">Fecha de Entrega</label>
+                    <input type="text" id="delivery-date" placeholder="dd/mm/yyyy">
+                </div>
+            </div>
+
+            <div class="product-section">
+                <div class="product-header">
+                    <div class="product-column">Producto</div>
+                    <div class="product-column">Marca</div>
+                    <div class="product-column">Unidad</div>
+                    <div class="product-column">Embalaje</div>
+                    <div class="product-column">Cantidad</div>
+                </div>
+                
+                <div class="product-row">
+                    <div class="product-column">
+                        <input type="text" placeholder="Nombre del producto" id="inputproducto">
+                    </div>
+                    <div class="product-column">
+                        <input type="text" placeholder="Nombre de la marca" id="inputnombre">
+                    </div>
+                    <div class="product-column">
+                        <input type="text" placeholder="Unidad correspondiente" id="inputUnidad">
+                    </div>
+                    <div class="product-column">
+                        <input type="text" placeholder="Embalaje correspondiente" id="inputEmbalaje">
+                    </div>
+                    <div class="product-column">
+                        <input type="text" placeholder="Cantidad de X unidades" id="inputCantidadUnidades">
+                    </div>
+                </div>
+                
+                <div class="product-row">
+                    <div class="product-column">
+                        <input type="text" placeholder="Nombre del producto">
+                    </div>
+                    <div class="product-column">
+                        <input type="text" placeholder="Nombre de la marca">
+                    </div>
+                    <div class="product-column">
+                        <input type="text" placeholder="Unidad correspondiente">
+                    </div>
+                    <div class="product-column">
+                        <input type="text" placeholder="Embalaje correspondiente">
+                    </div>
+                    <div class="product-column">
+                        <input type="text" placeholder="Cantidad de X unidades">
+                    </div>
+                </div>
+                
+                <div class="product-row">
+                    <div class="product-column">
+                        <input type="text" placeholder="Nombre del producto">
+                    </div>
+                    <div class="product-column">
+                        <input type="text" placeholder="Nombre de la marca">
+                    </div>
+                    <div class="product-column">
+                        <input type="text" placeholder="Unidad correspondiente">
+                    </div>
+                    <div class="product-column">
+                        <input type="text" placeholder="Embalaje correspondiente">
+                    </div>
+                    <div class="product-column">
+                        <input type="text" placeholder="Cantidad de X unidades">
+                    </div>
+                </div>
+            </div>
+
+            <div class="observations-section">
+                <label for="observations">Observaciones</label>
+                <textarea id="observations" rows="5"></textarea>
+            </div>
+
+            <div class="submit-section">
+                <button class="submit-button" id="submit-order-btn">Emitir Pedido</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scriptdos.js"></script>
+</body>
+</html>
